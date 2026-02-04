@@ -1,0 +1,174 @@
+body,html{
+    height: 100%;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+section{
+    width: 70%;
+    height: 30%;
+}
+
+#farenheit,#kelvin{
+    color: transparent;
+}
+
+#ex1{
+    border-radius: 7px;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+section>input{
+    border-radius: 7px;
+    width: 20%;
+    border: none;
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    height: 10%;
+    font-size: medium;
+}
+
+section>button{
+    border-radius: 7px;
+    width: 10%;
+    border: none;
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    background-color: white;
+    height: 10%;
+}
+
+button:hover{
+    cursor:pointer;
+}
+
+.mulish {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+#ex2{
+  width: 70%;
+  min-height: 320px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+#ex2 h1{
+  margin: 0;
+}
+
+#row{
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+}
+
+#customizar{
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+  gap: 14px;
+}
+
+#customizar > input[type="text"]{
+  width: 30%;
+  max-width: 420px;
+  height: 44px;
+  padding: 0 14px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  font-size: 1rem;
+}
+
+#customizar > input[type="color"]{
+  width: 100%;
+  max-width: 180px;
+  height: 44px;
+  padding: 4px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+#card{
+  --card-color: #000000;
+  flex: 0 0 320px;
+  height: 170px;
+  background: linear-gradient(135deg, var(--card-color), rgba(0,0,0,0.18));
+  border-radius: 14px;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.18);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 16px;
+}
+
+#nome-card{
+  margin: 0;
+  font-size: 1.45rem;
+  letter-spacing: 0.2px;
+}
+
+#cargo-card{
+  margin: 6px 0 0 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 900px){
+  #ex2{
+    width: 92%;
+  }
+
+  #row{
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #customizar{
+    min-width: 0;
+  }
+
+  #customizar > input[type="color"]{
+    border-radius: 100%;
+    width: 20%;
+  }
+
+  #card{
+    flex: 0 0 auto;
+    width: 100%;
+    height: 170px;
+  }
+}

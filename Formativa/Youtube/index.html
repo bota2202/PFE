@@ -1,121 +1,28 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube</title>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-</head>
-<body>
+  </head>
+  <body>
 
-    <nav class="navbar">
-        <div class="nav-esquerda">
-            <button id="menu-btn" onclick="toggleSidebar()">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <a href="#" class="logo">
-                <i class="fa-brands fa-youtube" style="color:#FF0000; font-size:28px;"></i>
-                <span>YouTube</span>
-            </a>
-        </div>
+    <!--Topo-->
+    <div id="topo"></div>
 
-        <div class="nav-centro">
-            <div class="barra-pesquisa">
-                <input type="text" placeholder="Pesquisar" id="input-pesquisa">
-                <button class="btn-lupa">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </div>
-            <button class="btn-microfone">
-                <i class="fa-solid fa-microphone"></i>
-            </button>
-        </div>
+    <!--Barra de opções-->
+    <div id="opcoes"></div>
 
-        <div class="nav-direita">
-            <button class="btn-criar">
-                <i class="fa-solid fa-video"></i>
-                <span>Criar</span>
-            </button>
-            <button class="btn-icone">
-                <i class="fa-solid fa-bell"></i>
-            </button>
-            <div class="avatar">JD</div>
-        </div>
-    </nav>
+    <!--Barra lateral-->
+    <div id="side"></div>
 
-    <div class="wrapper">
+    <!--Principal-->
+    <div id="main"></div>
 
-        <aside class="sidebar" id="sidebar">
-            <div class="sidebar-item active">
-                <i class="fa-solid fa-house"></i>
-                <span>Início</span>
-            </div>
-            <div class="sidebar-item">
-                <i class="fa-solid fa-fire-flame-curved"></i>
-                <span>Em alta</span>
-            </div>
-            <div class="sidebar-item">
-                <i class="fa-solid fa-music"></i>
-                <span>Música</span>
-            </div>
-            <div class="sidebar-item">
-                <i class="fa-solid fa-film"></i>
-                <span>Filmes</span>
-            </div>
-            <div class="sidebar-item">
-                <i class="fa-solid fa-gamepad"></i>
-                <span>Jogos</span>
-            </div>
-            <div class="sidebar-item">
-                <i class="fa-solid fa-newspaper"></i>
-                <span>Notícias</span>
-            </div>
-            <div class="sidebar-item">
-                <i class="fa-solid fa-trophy"></i>
-                <span>Esportes</span>
-            </div>
-            <div class="sidebar-divider"></div>
-            <div class="sidebar-item">
-                <i class="fa-regular fa-clock"></i>
-                <span>Assistir mais tarde</span>
-            </div>
-            <div class="sidebar-item">
-                <i class="fa-solid fa-thumbs-up"></i>
-                <span>Vídeos curtidos</span>
-            </div>
-            <div class="sidebar-item">
-                <i class="fa-solid fa-history"></i>
-                <span>Histórico</span>
-            </div>
-        </aside>
-
-        <main class="conteudo">
-
-            <div class="filtros-container">
-                <div class="filtros">
-                    <button class="filtro ativo">Tudo</button>
-                    <button class="filtro">Música</button>
-                    <button class="filtro">Jogos</button>
-                    <button class="filtro">Ao vivo</button>
-                    <button class="filtro">Programação</button>
-                    <button class="filtro">Notícias</button>
-                    <button class="filtro">Esportes</button>
-                    <button class="filtro">Filmes</button>
-                    <button class="filtro">Culinária</button>
-                    <button class="filtro">Tecnologia</button>
-                    <button class="filtro">Viagens</button>
-                    <button class="filtro">Moda</button>
-                    <button class="filtro">Ciência</button>
-                </div>
-            </div>
-
-            <div class="grid-videos" id="grid-videos">
-            </div>
-
-        </main>
-    </div>
-
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>

@@ -17,6 +17,11 @@
   }
 }
 
+body {
+  height: 400%;
+  margin-bottom: 1%;
+}
+
 .hero {
   position: relative;
 
@@ -265,7 +270,7 @@
   width: 80%;
 }
 
-#Ex3{
+#Ex3 {
   display: flex;
   width: 50%;
   min-height: 100px;
@@ -281,7 +286,7 @@
   margin-bottom: 30px;
 }
 
-#Ex3>input{
+#Ex3 > input {
   background-color: white;
   border-radius: 5px;
   min-height: 30px;
@@ -291,14 +296,15 @@
   color: black;
 }
 
-#Ex3>p{
+#Ex3 > p {
   color: black;
 }
 
-#Ex4{
+#Ex4 {
   background-color: white;
   width: 90%;
   height: 40%;
+  min-height: 300px;
   overflow-y: auto;
   border-radius: 7px;
   display: flex;
@@ -308,12 +314,185 @@
   align-self: center;
   padding: 1%;
   flex-direction: column;
+  margin-bottom: 3%;
+  box-shadow: 0px 1px 10px 5px rgba(255, 255, 255, 0.4);
 }
 
-#Ex4>h1{
+#Ex4 > h1 {
   color: black;
 }
 
-.card{
-  background-color: aqua;
+#Ex4 > input:nth-of-type(1) {
+  margin-top: 5%;
+}
+
+#Ex4 > input {
+  background-color: white;
+  border-radius: 7px;
+  border: none;
+  padding-left: 1%;
+  padding-right: 1%;
+  color: rgb(0, 0, 0);
+  margin-bottom: 1%;
+  width: 40%;
+  min-height: 35px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+#Ex4 > button {
+  margin-top: 4%;
+  margin-bottom: 5%;
+  width: 15%;
+  min-height: 50px;
+  border-radius: 7px;
+  border: none;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.07);
+  background-color: white;
+  color: black;
+}
+
+#Ex4 > div::before {
+  content: "";
+  display: block;
+  min-width: 500px;
+  height: 2px;
+  background-color: black;
+  border-radius: 10px;
+  margin: 10% auto;
+}
+
+.card3 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.08);
+  padding-top: 5%;
+  padding-bottom: 2%;
+  margin-bottom: 5%;
+  max-height: 100px;
+}
+
+.card3 h2 {
+  color: black;
+  font-size: x-large;
+}
+
+.card3 h3 {
+  color: gray;
+  font-size: larger;
+}
+
+.card3:first-of-type {
+  margin-top: 20%;
+}
+
+#Ex5 {
+  background-color: white;
+  padding: 1%;
+  min-height: 300px;
+  width: 60%;
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#Ex5 h1 {
+  color: black;
+}
+
+#Ex5 input {
+  background-color: white;
+  border-radius: 7px;
+  border: none;
+  padding-left: 1%;
+  padding-right: 1%;
+  color: rgb(0, 0, 0);
+  margin-bottom: 1%;
+  width: 40%;
+  min-height: 45px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+#Ex5 > input:first-of-type {
+  margin-top: 8%;
+}
+
+#Ex5 > input:last-of-type {
+  margin-bottom: 8%;
+}
+
+#Ex5 button {
+  background-color: white;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.05);
+  color: black;
+  border: none;
+  border-radius: 7px;
+  width: 20%;
+  min-height: 40px;
+}
+
+#Ex5 > div::before {
+  content: "";
+  display: block;
+  min-width: 500px;
+  height: 2px;
+  background-color: black;
+  border-radius: 10px;
+  margin: 10% auto;
+}
+
+.card4 {
+  background-color: white;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 7px;
+  border: none;
+  min-height: 70px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.card4 img{
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.05);
+  max-width: 200px;
+  height: auto;
+}
+
+#side{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.1);
+  padding: 1%;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 150px;
+  min-width: 200px;
+}
+
+#side>button{
+  border-radius: 7px;
+  background-color: rgba(255, 0, 0, 0.8);
+  border: none;
+  min-width: 100px;
+  outline: 1px solid white;
+  color: white;
+}
+
+.card4 h2 {
+  color: black;
+}
+
+button:hover {
+  cursor: pointer;
 }

@@ -12,6 +12,7 @@ function App() {
       <Ex2 />
       <Ex3 />
       <Ex4 />
+      <Ex5 />
     </div>
   );
 }
@@ -98,12 +99,69 @@ function Ex4() {
         Adicionar
       </button>
       <div>
-        {tasks.map((task,index)=>(
-          <div className="card" key={index}>
+        {tasks.map((task, index) => (
+          <div className="card3" key={index}>
             <h2>{task.titulo}</h2>
             <h3>{task.descricao}</h3>
           </div>
         ))}
+      </div>
+    </div>
+  );
+}
+
+function Ex5() {
+  const [filmes, setFilmes] = useState([]);
+  const [titulo, setTitulo] = useState("");
+  const [imagem, setImagem] = useState("");
+
+  const deleteFilme=(id)=>{
+    if(!window.confirm("Tem certeza que deseja excluir?")) return;
+    setFilmes(filmes.filter((f)=>f.id !== id));
+  }
+
+  return (
+    <div id="Ex5">
+      <h1>Listar filmes</h1>
+      <input
+        type="text"
+        value={titulo}
+        placeholder="Digite o título do filme"
+        onChange={(e) => setTitulo(e.target.value)}
+      />
+      <input
+        type="text"
+        value={imagem}
+        placeholder="Digite a url do cartaz"
+        onChange={(e) => setImagem(e.target.value)}
+      />
+      <button
+        onClick={() => {
+          if (!titulo.trim() || !imagem.trim()) return;
+          const newFilme = {
+            id: crypto.randomUUID(),
+            titulo: titulo,
+            imagem: imagem,
+          };
+          setFilmes([...filmes, newFilme]);
+          setTitulo("");
+          setImagem("")
+        }}
+      >
+        Adicionar
+      </button>
+      <div>
+        {filmes.map((filme, index) => {
+          return (
+            <div className="card4" key={index}>
+              <div id="side">
+                <h2>{filme.titulo}</h2>
+                <button onClick={()=>deleteFilme(filme.id)}>Remover</button>
+              </div>
+              <img src={filme.imagem} alt={`Cartaz de ${filme.titulo}`}/>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
